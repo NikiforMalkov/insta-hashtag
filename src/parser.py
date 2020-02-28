@@ -52,7 +52,9 @@ class Parser(object):
             )
             self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             publication_collection = self.get_publication_list()
-            publication_div = publication_collection[0].find_element_by_css_selector(self.selector_collection["publicationDiv"])
+            publication_div = publication_collection[0].find_element_by_css_selector(
+                self.selector_collection["publicationDiv"]
+            )
             publication_div.click()
             element = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, self.selector_collection["publicationTime"]))
@@ -69,8 +71,8 @@ class Parser(object):
             element = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, self.selector_collection["paginationArrow"]))
             )
-            self.get_post()
-            return True
+            result = self.get_post()
+            return result
         finally:
             return result
 
@@ -81,7 +83,6 @@ class Parser(object):
         return publication_collection
 
     def get_post(self):
-        # window.location.href
         link = self.driver.current_url
         date = self.driver.find_element_by_css_selector(self.selector_collection["publicationTime"])
         image_tag = self.driver.find_element_by_css_selector(self.selector_collection["publicationImage"])
@@ -99,7 +100,8 @@ class Parser(object):
             )
             next_button.click()
             print("Add new post")
+            return False
         else:
             print("Skip")
             next_button.click()
-
+            return True
