@@ -44,8 +44,8 @@ selectorCollection = {
     "publicationClosePopupButton": "body > div._2dDPU.vCf6V > div.Igw0E.IwRSH.eGOV"
                                    "_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button",
 
-    "pub": "body > div._2dDPU.vCf6V > div.zZYga > div"
-
+    "paginationArrow": "body > div._2dDPU.vCf6V > div.EfHg9 > div > div > a._65Bje.coreSpriteRightPaginationArrow",
+    "test": "body > div._2dDPU.vCf6V > div.zZYga > div > article",
 }
 
 webDriver = webdriver.Chrome()
