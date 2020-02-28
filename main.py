@@ -18,26 +18,16 @@ selectorCollection = {
                      "div:nth-child(3) > div > label > input ",
     "singInButton": "#react-root > section > main > div > article > div > div:nth-child(1) > div > form > "
                     "div:nth-child(4) ",
-    # "publication": "#react-root > section > main > div > div._2z6nI > article:nth-child(2) > div:nth-child(1) > "
-                  # "div > div:nth-child(2) > div",
     "publication": "#react-root > section > main > article > div.EZdmt > div > div > div:nth-child(1) > "
                    "div:nth-child(1)",
-#react-root > section > main > article > div.EZdmt > div > div > div:nth-child(1) > div:nth-child(1) > a > div > div._9AhH0
     "publicationRow": "#react-root > section > main > div > div._2z6nI > article:nth-child(2) > div"
                       "> div > div ",
     "publicationCollection": "#react-root > section > main > article > div > div > div > div > a",
-
-#react-root > section > main > article > div.EZdmt > div > div > div:nth-child(1) > div:nth-child(2) > a
-#react-root > section > main > article > div.EZdmt > div > div > div:nth-child(2) > div:nth-child(1) > a
-#react-root > section > main > article > div:nth-child(3) > div > div:nth-child(7) > div:nth-child(1) > a
     "publicationImage": "div:nth-child(1) > a > div > div.KL4Bh > img",
     "targetPublication": " a > div > div",
-    "publicationUserLogin": "body > div._2dDPU.vCf6V > div.zZYga > div > article > header > div.o-MQd.z8cbW > div.PQo_0.RqtMr > div.e1e1d > a",
+    "publicationUserLogin": "body > div._2dDPU.vCf6V > div.zZYga > div > article > header > "
+                            " div.o-MQd.z8cbW > div.PQo_0.RqtMr > div.e1e1d > a",
     "publicationDiv": " div > div._9AhH0 ",
-    #react-root > section > main > article > div > div > div > div > a > div.eLAPa > div._9AhH0
-    #react-root > section > main > article > div > div > div > div > a > div > div._9AhH0
-    #react-root > section > main > article > div > div > div > div > a > div.eLAPa > div._9AhH0
-    #react-root > section > main > article > div > div > div > div > a > div.eLAPa > div._9AhH0
     "publicationLink": "div:nth-child(1) > a",
     "publicationTime": "body > div._2dDPU.vCf6V > div.zZYga > div > article > div.eo2As > div.k_Q0X.NnvRN > a > time",
     "publicationDescription": ".PpGvg > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2)",
@@ -45,7 +35,6 @@ selectorCollection = {
                                    "_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button",
 
     "paginationArrow": "body > div._2dDPU.vCf6V > div.EfHg9 > div > div > a._65Bje.coreSpriteRightPaginationArrow",
-    "test": "body > div._2dDPU.vCf6V > div.zZYga > div > article",
 }
 
 webDriver = webdriver.Chrome()
